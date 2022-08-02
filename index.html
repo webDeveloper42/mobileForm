@@ -8,8 +8,86 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://kit.fontawesome.com/5b275c69ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <div class="left">
+                    <li>&#9776;</li>
+                    <li>Contact</li>
+                </div>
+                <div class="right">
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <form action="post">
+        <div class="user">
+            <div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+                <input class="input-dark" name="user" for="name" type="text" placeholder="Name">
+            </div>
+        </div>
+        <div class="phoneNum">
+            <div>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+                <input class="input-light" name="phone" for="phoneNumber" type="text" placeholder="Phone Number">
+            </div>
+            <div>
+                <select name="phone" for="label" class="select-light">
+                    <option value="" default>Label</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="rowOne">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <input class="input-dark" name="address" for="address" type="text" placeholder="Address">
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <input class="input-light" name="address" for="city" type="text" placeholder="City">
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <select class="select-dark" name="address" for="state">
+                        <option value="" default>State</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="input-dark" for="zip" name="address" type="text" placeholder="Zip">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+                <input class="input-light" type="text" for="email" name="email" placeholder="Email">
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <div>
+                <input type="text" name="birthday" for="birthday" placeholder="Birthday">
+            </div>
+        </div>
+    </form>
 </body>
 </html>
